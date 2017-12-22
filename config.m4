@@ -58,5 +58,8 @@ if test "$PHP_PMC" != "no"; then
   dnl
   dnl PHP_SUBST(PMC_SHARED_LIBADD)
 
-  PHP_NEW_EXTENSION(pmc, pmc.c pmc_util.c, $ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
+  PHP_NEW_EXTENSION(pmc,
+    pmc.c \
+    pmc_util.c,
+    $ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 fi
