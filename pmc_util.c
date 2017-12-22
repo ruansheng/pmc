@@ -7,15 +7,12 @@
 #endif
 
 #include "php.h"
-#include "standard/php_string.h" /* for php_basename */
-#include "Zend/zend_exceptions.h" /* for zend_exception_get_default */
 
 #include "php_pmc.h"
 #include "pmc_util.h"
 
 zend_class_entry *pmc_util_ce;
 
-PMC_STARTUP_FUNCTION(util);
 PHP_METHOD(pmc_util, show);
 
 /** {{{ yaf_config_methods

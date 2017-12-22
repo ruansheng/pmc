@@ -25,8 +25,8 @@
 #include "php.h"
 #include "php_ini.h"
 #include "ext/standard/info.h"
-#include "php_pmc.h"
 
+#include "php_pmc.h"
 #include "pmc_util.h"
 
 /* If you declare any globals in php_pmc.h uncomment this:
