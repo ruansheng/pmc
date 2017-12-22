@@ -24,5 +24,5 @@ class PmcUtil
 
 # Example
 ```
-php -r 'var_dump(new PmcUtil());'
+# php -r 'var_dump(new PmcUtil());'
 ```
