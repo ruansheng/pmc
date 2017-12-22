@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("pmc", "for pmc support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("pmc", "enable pmc support", "no");
+
+if (PHP_PMC != "no") {
+	EXTENSION("pmc", "pmc.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+
