@@ -15,6 +15,7 @@
 
 zend_class_entry *pmc_util_ce;
 
+PMC_STARTUP_FUNCTION(util);
 PHP_METHOD(pmc_util, show);
 
 /** {{{ yaf_config_methods
