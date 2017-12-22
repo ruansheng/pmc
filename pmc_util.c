@@ -19,7 +19,7 @@ PHP_METHOD(pmc_util, show);
 /** {{{ yaf_config_methods
 */
 zend_function_entry pmc_util_methods[] = {
-        PHP_ME(pmc_util, show, NULL)
+        PHP_ME(pmc_util, show, NULL, ZEND_ACC_PUBLIC)
         {NULL, NULL, NULL}
 };
 /* }}} */
