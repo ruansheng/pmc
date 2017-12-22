@@ -10,6 +10,7 @@
 #include "standard/php_string.h" /* for php_basename */
 #include "Zend/zend_exceptions.h" /* for zend_exception_get_default */
 
+#include "php_pmc.h"
 #include "pmc_util.h"
 
 zend_class_entry *pmc_util_ce;
