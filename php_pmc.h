@@ -38,8 +38,6 @@ extern zend_module_entry pmc_module_entry;
 #include "TSRM.h"
 #endif
 
-#define PHP_PMC_VERSION "1.0.0-dev"
-
 #define PMC_STARTUP_FUNCTION(module) ZEND_MINIT_FUNCTION(pmc_##module)
 #define PMC_STARTUP(module) ZEND_MODULE_STARTUP_N(pmc_##module)(INIT_FUNC_ARGS_PASSTHRU)
 #define PMC_RINIT_FUNCTION(module) ZEND_RINIT_FUNCTION(pmc_##module)
