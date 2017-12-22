@@ -9,6 +9,4 @@ extern zend_class_entry *pmc_util_ce;
 
 PMC_STARTUP_FUNCTION(util);
 
-PHP_METHOD(util, show);
-
 #endif //PHP7_PMC_UTIL_H

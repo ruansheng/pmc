@@ -2,23 +2,31 @@
 // Created by ruansheng on 17/12/22.
 //
 
-#ifdef HAVE_PMC_UTIL_H
-#include "pmc_util.h"
+#ifdef HAVE_CONFIG_H
+#include "config.h"
 #endif
 
+#include "php.h"
+#include "standard/php_string.h" /* for php_basename */
+#include "Zend/zend_exceptions.h" /* for zend_exception_get_default */
+
+#include "pmc_util.h"
+
 zend_class_entry *pmc_util_ce;
+
+PHP_METHOD(pmc_util, show);
 
 /** {{{ yaf_config_methods
 */
 zend_function_entry pmc_util_methods[] = {
-        PHP_ME(util, show, NULL)
+        PHP_ME(pmc_util, show, NULL)
         {NULL, NULL, NULL}
 };
 /* }}} */
 
 /** {{{ proto public Yaf_Config_Ini::valid(void)
 */
-PHP_METHOD(util, show) {
+PHP_METHOD(pmc_util, show) {
     php_printf("hello util!");
 }
 /* }}} */
