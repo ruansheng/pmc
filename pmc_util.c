@@ -11,14 +11,14 @@ zend_class_entry *pmc_util_ce;
 /** {{{ yaf_config_methods
 */
 zend_function_entry pmc_util_methods[] = {
-        PHP_ME(pmc_util, get, NULL)
+        PHP_ME(util, show, NULL)
         {NULL, NULL, NULL}
 };
 /* }}} */
 
 /** {{{ proto public Yaf_Config_Ini::valid(void)
 */
-PHP_METHOD(util) {
+PHP_METHOD(util, show) {
     php_printf("hello util!");
 }
 /* }}} */
