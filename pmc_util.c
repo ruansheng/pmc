@@ -15,7 +15,7 @@ zend_class_entry *pmc_util_ce;
 
 PHP_METHOD(pmc_util, show);
 
-/** {{{ yaf_config_methods
+/** {{{ pmc_util_methods
 */
 zend_function_entry pmc_util_methods[] = {
         PHP_ME(pmc_util, show, NULL, ZEND_ACC_PUBLIC)
@@ -23,7 +23,7 @@ zend_function_entry pmc_util_methods[] = {
 };
 /* }}} */
 
-/** {{{ proto public Yaf_Config_Ini::valid(void)
+/** {{{ proto public PmcUtil::show()
 */
 PHP_METHOD(pmc_util, show) {
     php_printf("hello util!");
