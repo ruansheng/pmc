@@ -20,9 +20,11 @@ add 'extension=pmc.so'
 # Documentation
 ```
 class PmcUtil
+class PmcLog
 ```
 
 # Example
 ```
 # php -r 'var_dump(new PmcUtil());'
+# php -r 'var_dump(new PmcLog());'
 ```
