@@ -28,6 +28,7 @@
 
 #include "php_pmc.h"
 #include "pmc_util.h"
+#include "pmc_log.h"
 
 /* If you declare any globals in php_pmc.h uncomment this:
 ZEND_DECLARE_MODULE_GLOBALS(pmc)
@@ -94,7 +95,7 @@ PHP_MINIT_FUNCTION(pmc)
 	REGISTER_INI_ENTRIES();
 	*/
 	PMC_STARTUP(util);
-
+	PMC_STARTUP(log);
 
 	return SUCCESS;
 }
